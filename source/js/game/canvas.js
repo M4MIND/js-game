@@ -5,6 +5,7 @@ var canvas = (function () {
         property: {
             width: 0,
             height: 0
+            
         },
         clear: function () {
             this.ctx.setTransform(1, 0, 0, 1, 0, 0);

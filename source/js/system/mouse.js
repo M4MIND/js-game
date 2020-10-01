@@ -3,6 +3,7 @@ var mouse = (function () {
         position: {
             x: 0,
             y: 0,
+            
         },
         lbtn: false,
         rbtn: false,

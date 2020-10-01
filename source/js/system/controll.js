@@ -4,6 +4,7 @@ var controll = (function () {
         init: function () {
             document.addEventListener('keydown', function (e) {
                 _interface.dispatch('keydown', e);
+                
             })
         },
         dispatch: function (event, data) {

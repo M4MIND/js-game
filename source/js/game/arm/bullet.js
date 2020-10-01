@@ -1,4 +1,5 @@
 var bullet = function (pos, angle) {
+    
     return {
         type: 'bullet',
         pos: pos,

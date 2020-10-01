@@ -45,7 +45,6 @@ var loadGameScripts = (function () {
         }
     }
 
-
     var _interface = {
         scriptsList: [],
         events: {},

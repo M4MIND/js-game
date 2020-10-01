@@ -6,6 +6,7 @@ var main = (function () {
         pushObject: function (obj) {
             obj.id = Math.random().toString(36);
             this.objects[obj.id] = obj;
+            
         },
         init: function () {
             canvas.init();

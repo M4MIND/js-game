@@ -1,4 +1,5 @@
 var pistol = function () {
+    
     return {
         maxBullet: 7,
         bullet: 7,

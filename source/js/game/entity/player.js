@@ -17,6 +17,7 @@ var player = function (pos, size, speed) {
                 if (Math.sqrt(Math.pow(mouse.position.x - _.pos.x, 2) + Math.pow(mouse.position.y - _.pos.y, 2), 2) > Math.sqrt(2, 2) * _.size.x) {
                     _.pos.x += (Math.sin(_.angle) * _.speed * main.dt);
                     _.pos.y += (Math.cos(_.angle) * _.speed * main.dt);
+                    
                 }
             }
 
