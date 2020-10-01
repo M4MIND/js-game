@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            min-height: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+</body>
+<script src="/source/js/system/loadGameScripts.js"></script>
+<script>
+    loadGameScripts.addListSctipts([
+        '/source/js/system/requestAnimationFrame.js',
+        '/source/js/system/controll.js',
+        '/source/js/system/mouse.js',
+        '/source/js/game/main.js',
+        '/source/js/game/canvas.js',
+        '/source/js/game/entity/entity.js',
+        '/source/js/game/entity/player.js',
+        '/source/js/game/arm/pistol.js',
+        '/source/js/game/arm/bullet.js',
+    ]).on('load', function (data) {
+        console.dir('Load script: ' + data.url);
+    }).on('fullLoad', function (data) {
+        main.init();
+    }).load();
+</script>
+
+</html>
