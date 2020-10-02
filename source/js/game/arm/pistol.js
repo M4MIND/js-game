@@ -5,7 +5,7 @@ var pistol = function () {
         bullet: 7,
         allBullet: 99,
         lastFire: Date.now(),
-        timeOut: 60,
+        timeOut: 256,
         fire: function (pos, angle) {
             if (Date.now() - this.lastFire > this.timeOut) {
                 this.lastFire = Date.now();

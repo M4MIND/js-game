@@ -13,7 +13,7 @@ var main = (function () {
             controll.init();
             mouse.init();
 
-            for (var i = 0; i < 100; i++) {
+            for (var i = 0; i < 1001; i++) {
                 this.pushObject(player(
                     { x: Math.random() * canvas.property.width, y: Math.random() * canvas.property.height },
                     { x: 20, y: 20 },

@@ -3,7 +3,7 @@ var bullet = function (pos, angle) {
     return {
         type: 'bullet',
         pos: pos,
-        size: { x: 4, y: 20 },
+        size: { x: 4, y: 4 },
         angle: angle,
         update: function () {
             this.pos.x += Math.sin(this.angle) * 1 * main.dt;
